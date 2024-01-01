@@ -23,10 +23,11 @@
         <div class="text-white lg:flex lg:ml-20 lg:space-x-4 ">
           <div id="menuBar" class="max-lg:hidden max-lg:mb-5">
             <ul class="lg:flex lg:space-x-4 font-semibold max-md:items-center max-lg:items-center">
+              <li><a href="#home" class="hover:text-red-500 transition ease-in-out duration-750">Home</a></li>
               <li><a href="#about" class="hover:text-red-500 transition ease-in-out duration-750">About Me</a></li>
               <li><a href="#services" class="hover:text-red-500 transition ease-in-out duration-750">Services</a></li>
               <li><a href="#portfolio" class="hover:text-red-500 transition ease-in-out duration-750">Portfolio</a></li>
-              <li><a href="#" class="hover:text-red-500 transition ease-in-out duration-750">Blog</a></li>
+              <!-- <li><a href="./blog.html" class="hover:text-red-500 transition ease-in-out duration-750">Blog</a></li> -->
               <li><a href="#contact-me" class="hover:text-red-500 transition ease-in-out duration-750">Contact Us</a></li>
             </ul>
           </div>
@@ -51,7 +52,7 @@
     <main>
 
       <!-- Section -> Profile -->
-      <section id="about" class="bg-sky-950 lg:pl-16 lg:pr-2 max-lg:px-5 lg:px-20 max-lg:pt-12 max-lg:text-center lg:pt-5 lg:flex items-center justify-between relative">
+      <section class="bg-sky-950 lg:pl-16 lg:pr-2 max-lg:px-5 lg:px-20 max-lg:pt-12 max-lg:text-center lg:pt-5 lg:flex items-center justify-between relative">
 
         <!-- Title -->
         <div class="text-white space-y-3 cursor-default">
@@ -97,11 +98,7 @@
 
           </div>
 
-          
-
         </div>
-
-
       </section>
  
       <!-- Section -> Services -->
@@ -130,7 +127,6 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.413-.588T2 19V8q0-.825.588-1.413T4 6h4V4q0-.825.588-1.413T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.588 1.413T20 21H4Zm6-15h4V4h-4v2Z"/></svg>
           </div>
         </div>
-        
       </section>
 
       <!-- Section -> Portfolio -->
@@ -192,22 +188,22 @@
 
         <!-- Load more button -->
         <div class="text-center max-sm:mt-8 sm:mt-3 flex justify-center">
-          <button id="loadMoreBtn" class="border-2 rounded border-white py-1 px-2 flex items-center">Load More <svg id="sandTimer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"  class="ml-1"><g fill="#ffffff"><path d="M13 6h-2v1a1 1 0 1 0 2 0z"/><path fill-rule="evenodd" d="M6 2v2h1v3a5 5 0 0 0 5 5a5 5 0 0 0-5 5v3H6v2h12v-2h-1v-3a5 5 0 0 0-5-5a5 5 0 0 0 5-5V4h1V2zm3 2h6v3a3 3 0 1 1-6 0zm0 13v3h6v-3a3 3 0 1 0-6 0" clip-rule="evenodd"/></g></svg></button>
+          <button id="loadMoreBtn" class="border-2 rounded border-white py-1 px-2 flex items-center"><span id="loadMoreText">Load More</span> <svg id="sandTimer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"  class="ml-1"><g fill="#ffffff"><path d="M13 6h-2v1a1 1 0 1 0 2 0z"/><path fill-rule="evenodd" d="M6 2v2h1v3a5 5 0 0 0 5 5a5 5 0 0 0-5 5v3H6v2h12v-2h-1v-3a5 5 0 0 0-5-5a5 5 0 0 0 5-5V4h1V2zm3 2h6v3a3 3 0 1 1-6 0zm0 13v3h6v-3a3 3 0 1 0-6 0" clip-rule="evenodd"/></g></svg></button>
         </div>
       </section>
 
       <!-- Section -> Contact Me -->
-      <section id="contact-me" class="text-white py-12 max-md:px-5 md:px-20 lg:px-16 " style="background-image: url('./assets/images/er_1.jpg');">
+      <section id="contact-me" class="text-white py-12 max-md:px-5 md:px-20 lg:px-16 bg-no-repeat sm:bg-cover sm:bg-center" style="background-image: url('./assets/images/er_1.jpg');">
 
         <!-- Contact Me -> Heading -->
-        <div class="cursor-default">
+        <div class="cursor-default sm:ml-32 md:ml-42 lg:ml-80">
           <h2 class="text-4xl font-bold text-center">Contact Me</h2>
-          <p class="text-sm my-3 text-center">
+          <p class="text-sm my-3 text-center max-sm:px-12 max-md:px-20 max-lg:px-24">
             Following details are my contacting details and click "Let's Say Hi" button to contact me on email.
           </p>
         </div>
 
-        <div class="sm:flex sm:items-center sm:justify-evenly mt-10 ">
+        <div class="sm:flex sm:items-center sm:justify-evenly mt-10  sm:ml-32 md:ml-42 lg:ml-80">
           <!-- Contact Me -> Left Side -->
           <div class="w-64 max-sm:mx-auto space-y-2 max-sm:pl-6 cursor-default">
 
@@ -239,9 +235,11 @@
             
           <!-- Contact Me -> Right Side -->
           <a href="mailto:developerthahee@gmail.com" class="cursor-default text-sky-950">
-            <div class="w-36 h-36 hover:scale-95 bg-green-500 border-2 border-dashed border-sky-950 max-sm:mx-auto max-sm:mt-8 rounded-full flex flex-col justify-center items-center cursor-pointer transition-all duration-700 shadow-2xl">
-              <h4 class="text-xl font-bold ">Let's Say Hi</h4>
-              <h6 class="text-sm font-bold">on Mail</h6>
+            <div class="w-40 h-40 hover:scale-95 border-x-4 border-y-2 border-white rounded-full flex justify-center items-center max-sm:mx-auto max-sm:mt-8">
+              <div class="w-36 h-36 hover:scale-95 bg-green-500 border-2 border-dashed border-sky-950  rounded-full flex flex-col justify-center items-center cursor-pointer transition-all duration-700 shadow-2xl">
+                <h4 class="text-xl font-bold">Let's Say Hi</h4>
+                <h6 class="text-sm font-bold">on Mail</h6>
+              </div>
             </div>
           </a>
         </div>

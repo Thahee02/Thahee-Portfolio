@@ -33,6 +33,7 @@ $("document").ready(function () {
   $("#loadMoreBtn").mouseleave(function () {
     $("#sandTimer").removeClass("animate-spin");
   });
+
   $("#loadMoreBtn").click(function () {
     $("#extraPortfolio").toggle();
   });
