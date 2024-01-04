@@ -37,4 +37,6 @@ $("document").ready(function () {
   $("#loadMoreBtn").click(function () {
     $("#extraPortfolio").toggle();
   });
+
+  $('#footerYear').text(curYear);
 });
