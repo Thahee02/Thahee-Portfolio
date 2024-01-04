@@ -28,10 +28,10 @@ $("document").ready(function () {
   // Load more button function
   $("#extraPortfolio").hide();
   $("#loadMoreBtn").mouseenter(function () {
-    $("#sandTimer").addClass("animate-spin");
+    $("#loadingIcon").addClass("animate-spin");
   });
   $("#loadMoreBtn").mouseleave(function () {
-    $("#sandTimer").removeClass("animate-spin");
+    $("#loadingIcon").removeClass("animate-spin");
   });
 
   $("#loadMoreBtn").click(function () {
