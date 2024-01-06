@@ -26,7 +26,7 @@ $("document").ready(function () {
   $("#noProjects").text(`${projects}+`);
 
   // Load more button function
-  $("#extraPortfolio").hide();
+  $(".extraPortfolio").hide();
   $("#loadMoreBtn").mouseenter(function () {
     $("#loadingIcon").addClass("animate-spin");
   });
