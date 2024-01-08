@@ -1,4 +1,5 @@
 $("document").ready(function () {
+
   // change title when user change the tab
   $("window").blur(function () {
     $("document").prop("title", "Welcome back to portfolio");
@@ -16,6 +17,17 @@ $("document").ready(function () {
   $("#menuBtn").click(function () {
     $("#menuBar").toggle();
   });
+
+  // Toggle Trigger button
+  function triggerBtn(){
+    if(window.scrollY < 100){
+      $('#triggerBtn').hide();
+    }
+    else{
+      $('#triggerBtn').show();
+    }
+  }
+  setInterval(triggerBtn, 100);
 
   // Experience calculator
   let startDate = new Date("08 01 2023");
