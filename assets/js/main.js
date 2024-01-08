@@ -1,9 +1,13 @@
 $("document").ready(function () {
-  // Disable right click
-  $('body').bind('contextmenu', function (e) {
-    return false;
+  // change title when user change the tab
+  $("window").blur(function () {
+    $("document").prop("title", "Welcome back to portfolio");
   });
 
+  // Disable right click
+  $("body").bind("contextmenu", function (e) {
+    return false;
+  });
 
   // Menu Bar toggle
   $("menuBtn > svg").text(
@@ -11,7 +15,6 @@ $("document").ready(function () {
   );
   $("#menuBtn").click(function () {
     $("#menuBar").toggle();
-    
   });
 
   // Experience calculator
@@ -45,5 +48,5 @@ $("document").ready(function () {
     $(".extraPortfolio").toggle();
   });
 
-  $('#footerYear').text(curYear);
+  $("#footerYear").text(curYear);
 });
