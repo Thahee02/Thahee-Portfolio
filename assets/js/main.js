@@ -1,13 +1,8 @@
 $("document").ready(function () {
-
-  // change title when user change the tab
-  $("window").blur(function () {
-    $("document").prop("title", "Welcome back to portfolio");
-  });
-
+ 
   // Disable right click
   $("body").bind("contextmenu", function (e) {
-    return false;
+    return true;
   });
 
   // Menu Bar toggle
@@ -16,6 +11,14 @@ $("document").ready(function () {
   );
   $("#menuBtn").click(function () {
     $("#menuBar").toggle();
+    $("#menuBtn").toggleClass('closeIcon');
+  });
+
+  // move my picture behalf of mouse move
+  $('#myPic').mousemove(function (e) {
+    let x = (e.clientX * 5)/250;
+    let y = (e.clientY * 0)/250;
+    e.target.style.transform = `translateX(${x}px) translateY(${y}px)`
   });
 
   // Toggle Trigger button
@@ -61,4 +64,11 @@ $("document").ready(function () {
   });
 
   $("#footerYear").text(curYear);
+
 });
+
+// change title when user change the tab
+$("window").blur(function () {
+  $("document").prop("title", "Welcome back to portfolio")
+});
+
