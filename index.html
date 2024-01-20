@@ -10,6 +10,10 @@
 
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AnimateCSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   </head>
   <body class="select-none">
 
@@ -23,7 +27,7 @@
         </div>
 
         <!-- Menus -->
-        <div class="text-white lg:flex lg:ml-20 lg:space-x-4 ">
+        <div class="text-white lg:flex lg:ml-20 lg:space-x-4 max-lg:animate__animated animate__fadeIn animate_slower ">
           <div id="menuBar" class="max-lg:hidden max-lg:mb-5">
             <ul class="lg:flex lg:space-x-4 font-semibold max-md:items-center max-lg:items-center">
               <li><a href="#home" class="text-red-500 transition ease-in-out duration-750">Home</a></li>
@@ -104,25 +108,25 @@
  
       <!-- Section -> Services -->
       <section id="services" class="text-white py-12 max-sm:px-12 max-md:px-4 max-lg:px-22 flex items-center justify-around flex-wrap bg-cover outline-slate-50" style="background-image: url('./assets/images/22.jpg');">
-        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative">
+        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative animate__animated animate__fadeIn">
           <span class="text-white text-4xl mb-1">00</span><span class="text-white">Awards</span>
           <div class="absolute w-10 h-10 bg-sky-950 -top-5 left-5 rounded flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19 9a6.992 6.992 0 0 1-3 5.745V22h-2.586L12 20.586L10.586 22H8v-7.255A7 7 0 1 1 19 9Zm-2 0A5 5 0 1 1 7 9a5 5 0 0 1 10 0Zm-7 10.757l2-2l2 2V15.71a7.001 7.001 0 0 1-2 .29a7.001 7.001 0 0 1-2-.29v4.047Z" clip-rule="evenodd"/></svg>
           </div>
         </div>
-        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative">
+        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative animate__animated animate__fadeIn">
           <span class="text-white text-4xl mb-1">00</span><span class="text-white">Clients</span>
           <div class="absolute w-10 h-10 bg-sky-950 -top-5 left-5 rounded flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M24 14.6c0 .6-1.2 1-2.6 1.2c-.9-1.7-2.7-3-4.8-3.9c.2-.3.4-.5.6-.8h.8c3.1-.1 6 1.8 6 3.5zM6.8 11H6c-3.1 0-6 1.9-6 3.6c0 .6 1.2 1 2.6 1.2c.9-1.7 2.7-3 4.8-3.9l-.6-.9zm5.2 1c2.2 0 4-1.8 4-4s-1.8-4-4-4s-4 1.8-4 4s1.8 4 4 4zm0 1c-4.1 0-8 2.6-8 5c0 2 8 2 8 2s8 0 8-2c0-2.4-3.9-5-8-5zm5.7-3h.3c1.7 0 3-1.3 3-3s-1.3-3-3-3c-.5 0-.9.1-1.3.3c.8 1 1.3 2.3 1.3 3.7c0 .7-.1 1.4-.3 2zM6 10h.3C6.1 9.4 6 8.7 6 8c0-1.4.5-2.7 1.3-3.7C6.9 4.1 6.5 4 6 4C4.3 4 3 5.3 3 7s1.3 3 3 3z"/></svg>
           </div>
         </div>
-        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative">
+        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative animate__animated animate__fadeIn">
           <span id="experiences" class="text-white text-4xl mb-1">00</span><span class="text-white">Months<br>Experience</span>
           <div class="absolute w-10 h-10 bg-sky-950 -top-5 left-5 rounded flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q1.6 0 3.075-.6t2.6-1.725L12 12V4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Z"/></svg>
           </div>
         </div>
-        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col  justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative">
+        <div class="border-dashed hover:scale-105 cursor-default transition ease-in-out duration-500 border-white border-4 text-center font-bold text-2xl hover:text-xl flex flex-col  justify-center items-center max-sm:w-40 sm:w-52 h-40 m-4 rounded-tr-3xl shadow-xl relative animate__animated animate__fadeIn">
           <span id="noProjects" class="text-white text-4xl mb-1">00</span><span class="text-white">Projects</span>
           <div class="absolute w-10 h-10 bg-sky-950 -top-5 left-5 rounded flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.413-.588T2 19V8q0-.825.588-1.413T4 6h4V4q0-.825.588-1.413T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.588 1.413T20 21H4Zm6-15h4V4h-4v2Z"/></svg>
@@ -135,7 +139,7 @@
 
         <div class="">
           <!-- Education -> Heading -->
-          <div class="text-center flex flex-col space-y-1 max-sm:mb-8 sm:mb-12 max-lg:mb-20 max-xl:mb-8 xl:mb-14">
+          <div class="text-center flex flex-col space-y-1 max-sm:mb-8 sm:mb-12 max-lg:mb-20 max-xl:mb-8 xl:mb-14 animate__animated animate__fadeInDown">
             <h2 class="text-4xl text-sky-950 font-bold">Educations</h2>
             <p class="max-sm:text-sm max-md:text-xs md:text-sm text-sky-900 font-semibold">Open minds find endless possibilities within the walls of learning.</p>
           </div>
@@ -143,7 +147,7 @@
           <!-- Education -> Centres -->
           <div>
 
-            <div class="sm:flex space-x-5 bg-gray-50 rounded-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3">
+            <div class="sm:flex space-x-5 bg-gray-50 rounded-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3 animate__animated animate__fadeInLeft">
               <!-- Centre Image -->
               <img src="./assets/images/uva wellassa university.jpg" alt="zahira college kalmunai" class="max-sm:w-64 max-sm:w-full sm:w-48 max-sm:h-52 sm:h-40 max-sm:mb-2 max-sm:rounded-t-xl sm:rounded-l-xl max-sm:mx-auto">
               <!-- About Centre -->
@@ -154,7 +158,7 @@
               </div>
             </div>
 
-            <div class="sm:flex space-x-5 bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3">
+            <div class="sm:flex space-x-5 bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3 animate__animated animate__fadeInRight">
               <!-- Centre Image -->
               <img src="./assets/images/nysc3.png" alt="zahira college kalmunai" class="max-sm:w-full sm:w-48 max-sm:h-52 sm:h-40 max-sm:mb-2 max-sm:rounded-t-xl sm:rounded-l-xl max-sm:mx-auto">
               <!-- About Centre -->
@@ -165,7 +169,7 @@
               </div>
             </div>
 
-            <div class="sm:flex space-x-5  bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3">
+            <div class="sm:flex space-x-5  bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3 animate__animated animate__fadeInLeft">
               <!-- Centre Image -->
               <img src="./assets/images/zahira college kalmunai.jpg" alt="zahira college kalmunai" class="max-sm:w-full sm:w-48 max-sm:h-52 sm:h-40 max-sm:mb-2 max-sm:rounded-t-xl sm:rounded-l-xl max-sm:mx-auto">
               <!-- About Centre -->
@@ -176,7 +180,7 @@
               </div>
             </div>
 
-            <div class="sm:flex space-x-5 bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3">
+            <div class="sm:flex space-x-5 bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3 animate__animated animate__fadeInRight">
               <!-- Centre Image -->
               <img src="./assets/images/nysc3.png" alt="zahira college kalmunai" class="max-sm:w-full sm:w-48 max-sm:h-52 sm:h-40 max-sm:mb-2 max-sm:rounded-t-xl sm:rounded-l-xl max-sm:mx-auto">
               <!-- About Centre -->
@@ -187,7 +191,7 @@
               </div>
             </div>
 
-            <div class="sm:flex space-x-5  bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3">
+            <div class="sm:flex space-x-5  bg-gray-50 rounded-l-xl rounded-r-xl max-sm:max-w-72 sm:max-w-3xl mx-auto shadow-xl hover:shadow-2xl mb-5 max-sm:pb-3 animate__animated animate__fadeInLeft">
               <!-- Centre Image -->
               <img src="./assets/images/zahira college kalmunai.jpg" alt="zahira college kalmunai" class="max-sm:w-full sm:w-48 max-sm:h-52 sm:h-40 max-sm:mb-2 max-sm:rounded-t-xl sm:rounded-l-xl max-sm:mx-auto">
               <!-- About Centre -->
@@ -206,7 +210,7 @@
       <section id="portfolio" class="bg-sky-950 py-12 text-white max-sm:text-center max-md:px-5 md:px-20 lg:px-16 relative">
         
         <!-- Portfolio -> Heading -->
-        <div class="sm:flex sm:justify-between items-center cursor-default">
+        <div class="sm:flex sm:justify-between items-center cursor-default animate__animated animate__fadeInDown">
           <h2 class="text-4xl font-bold">Portfolio</h2>
           <p class="max-sm:text-sm max-md:text-xs md:text-sm max-sm:px-2 max-sm:mt-3 sm:text-right sm:w-80">
             Following these projects are my own projects. To get more project details please go to my <a href="https://github.com/Thahee02" class="underline">GitHub</a>
@@ -215,67 +219,67 @@
 
         <!-- Portfolio -> Images -->
         <div id="projects" class="max-sm:mt-8 sm:mt-12 max-lg:mt-20 max-xl:mt-8 xl:mt-14 max-sm:space-y-8 sm:flex max-lg:justify-evenly lg:justify-evenly lg:px-16 flex-wrap">
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
             <a href="https://thahee02.github.io/PRODIGY_WD_05/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/weather-app.PNG" alt="weather-app" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-sm transition-all duration-700">
               <p class="text-sm font-semibold">Weather App</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
             <a href="https://thahee02.github.io/PRODIGY_WD_02/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/stop-watch.PNG" alt="stop-watch" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Stop Watch App</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
             <a href="https://thahee02.github.io/PRODIGY_WD_03/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/tic-tac-toe.PNG" alt="tic-tac-toe" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Tic Tac Toe App</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
             <a href="https://thahee02.github.io/Thahee-Calculator/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/thahee-calculator.PNG" alt="thahee-calculator" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Calculator App</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
             <a href="" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/fruit-stand.png" alt="fruit-stand" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Fruit Stand</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
             <a href="https://thahee02.github.io/as-restaurant/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/as restaurant.PNG" alt="as-Restaurant" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">AS Restaurant</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 extraPortfolio">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX extraPortfolio">
             <a href="https://thahee02.github.io/digital-clock/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/digital-clock.PNG" alt="digital-clock" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Digital Clock</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 extraPortfolio">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX extraPortfolio">
             <a href="" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/lee-meridian.png" alt="hall-booking" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Hall Booking System</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 extraPortfolio">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX extraPortfolio">
             <a href="https://thahee02.github.io/countdown-timer/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/countdown-timer.PNG" alt="countdown-timer" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Countdown Timer App</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 extraPortfolio">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX extraPortfolio">
             <a href="https://thahee02.github.io/CodeAlpha_To_Do_List/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/to-do-list.PNG" alt="to-do-list" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-sm transition-all duration-700">
               <p class="text-sm font-semibold">To Do List App</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 extraPortfolio">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX extraPortfolio">
             <a href="#" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/phone-shop.PNG" alt="phone-shop" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700">
               <p class="text-sm font-semibold">Phone Shop</p>
@@ -293,7 +297,7 @@
       <section id="contact-me" class="text-white py-12 max-md:px-5 md:px-20 lg:px-16 bg-no-repeat sm:bg-cover sm:bg-center" style="background-image: url('./assets/images/er_1.jpg');">
 
         <!-- Contact Me -> Heading -->
-        <div class="cursor-default sm:ml-32 md:ml-42 lg:ml-80">
+        <div class="cursor-default sm:ml-32 md:ml-42 lg:ml-80 animate__animated animate__fadeInDown">
           <h2 class="text-4xl font-bold text-center">Contact Me</h2>
           <p class="text-sm my-3 text-center max-sm:px-12 max-md:px-20 max-lg:px-24">
             Following details are my contacting details and click "Let's Say Hi" button to contact me on email.
@@ -352,7 +356,7 @@
       <!-- Trigger to top button -->
       <section>
         <a href="#home">
-          <div id="triggerBtn" class="fixed text-white bottom-14 right-10 flex justify-center items-center border-2 rounded bg-cyan-900 hover:bg-sky-950">
+          <div id="triggerBtn" class="fixed text-white bottom-14 right-10 flex justify-center items-center border-2 rounded bg-cyan-900 hover:bg-sky-950 animate__animated animate__fadeInDownBig">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="#ffffff" d="m11 7.825l-4.9 4.9q-.3.3-.7.288t-.7-.313q-.275-.3-.288-.7t.288-.7l6.6-6.6q.15-.15.325-.212T12 4.425q.2 0 .375.063t.325.212l6.6 6.6q.275.275.275.688t-.275.712q-.3.3-.712.3t-.713-.3L13 7.825V19q0 .425-.288.713T12 20q-.425 0-.712-.288T11 19z"/></svg>
           </div>
         </a>

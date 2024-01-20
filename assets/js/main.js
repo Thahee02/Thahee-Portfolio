@@ -22,6 +22,7 @@ $("document").ready(function () {
   });
 
   // Toggle Trigger button
+  $('#triggerBtn').hide();
   function triggerBtn(){
     if(window.scrollY < 100){
       $('#triggerBtn').hide();
