@@ -69,30 +69,3 @@ $("document").ready(function () {
 $("window").blur(function () {
   $("document").prop("title", "Welcome back to portfolio");
 });
-
-// Add animate css on Education section
-function showEdu() {
-  if (window.scrollY > 300 && window.scrollY < 2000) {
-    $("#educationTitle").addClass("animate__fadeInDown");
-  } else {
-    $("#educationTitle").removeClass("animate__fadeInDown");
-  }
-}
-function showPort() {
-  if (window.scrollY > 1400 && window.scrollY < 1400) {
-    $("#portfolioTitle").addClass("animate__fadeInDown");
-  } else {
-    $("#portfolioTitle").removeClass("animate__fadeInDown");
-  }
-}
-function showContact() {
-  if (window.scrollY > 2100 && window.scrollY < 3000) {
-    $("#contactTitle").addClass("animate__fadeInDown");
-  } else {
-    $("#contactTitle").removeClass("animate__fadeInDown");
-  }
-}
-
-setInterval(showEdu, 100);
-setInterval(showPort, 100);
-setInterval(showContact, 100);
