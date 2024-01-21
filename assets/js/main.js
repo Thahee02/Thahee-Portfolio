@@ -1,5 +1,4 @@
 $("document").ready(function () {
- 
   // Disable right click
   $("body").bind("contextmenu", function (e) {
     return true;
@@ -11,24 +10,23 @@ $("document").ready(function () {
   );
   $("#menuBtn").click(function () {
     $("#menuBar").toggle();
-    $("#menuBtn").toggleClass('closeIcon');
+    $("#menuBtn").toggleClass("closeIcon");
   });
 
   // move my picture behalf of mouse move
-  $('#myPic').mousemove(function (e) {
-    let x = (e.clientX * 5)/250;
-    let y = (e.clientY * 0)/250;
-    e.target.style.transform = `translateX(${x}px) translateY(${y}px)`
+  $("#myPic").mousemove(function (e) {
+    let x = (e.clientX * 5) / 250;
+    let y = (e.clientY * 0) / 250;
+    e.target.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
 
   // Toggle Trigger button
-  $('#triggerBtn').hide();
-  function triggerBtn(){
-    if(window.scrollY < 100){
-      $('#triggerBtn').hide();
-    }
-    else{
-      $('#triggerBtn').show();
+  $("#triggerBtn").hide();
+  function triggerBtn() {
+    if (window.scrollY < 100) {
+      $("#triggerBtn").hide();
+    } else {
+      $("#triggerBtn").show();
     }
   }
   setInterval(triggerBtn, 100);
@@ -65,11 +63,36 @@ $("document").ready(function () {
   });
 
   $("#footerYear").text(curYear);
-
 });
 
 // change title when user change the tab
 $("window").blur(function () {
-  $("document").prop("title", "Welcome back to portfolio")
+  $("document").prop("title", "Welcome back to portfolio");
 });
 
+// Add animate css on Education section
+function showEdu() {
+  if (window.scrollY > 300 && window.scrollY < 2000) {
+    $("#educationTitle").addClass("animate__fadeInDown");
+  } else {
+    $("#educationTitle").removeClass("animate__fadeInDown");
+  }
+}
+function showPort() {
+  if (window.scrollY > 1400 && window.scrollY < 1400) {
+    $("#portfolioTitle").addClass("animate__fadeInDown");
+  } else {
+    $("#portfolioTitle").removeClass("animate__fadeInDown");
+  }
+}
+function showContact() {
+  if (window.scrollY > 2100 && window.scrollY < 3000) {
+    $("#contactTitle").addClass("animate__fadeInDown");
+  } else {
+    $("#contactTitle").removeClass("animate__fadeInDown");
+  }
+}
+
+setInterval(showEdu, 100);
+setInterval(showPort, 100);
+setInterval(showContact, 100);
