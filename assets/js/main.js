@@ -1,7 +1,12 @@
 $("document").ready(function () {
+
+  // Disable preloader
+
+  $('#preLoader').hide()
+
   // Disable right click
   $("body").bind("contextmenu", function (e) {
-    return true;
+    return false;
   });
 
   // Menu Bar toggle
