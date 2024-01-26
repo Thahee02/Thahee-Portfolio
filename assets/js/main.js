@@ -3,7 +3,7 @@ $('#preLoader').show()
 $("document").ready(function () {
 
   // Disable preloader
-    $('#preLoader').hide()  
+  $('#preLoader').hide()  
 
   // Disable right click
   $("body").bind("contextmenu", function (e) {
