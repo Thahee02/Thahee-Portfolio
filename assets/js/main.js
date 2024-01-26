@@ -2,7 +2,7 @@ $("document").ready(function () {
 
   // Disable preloader
   $('document').load(function () {
-    $('#preLoader').hide()
+    $('#preLoader').show()
     
   });
   
