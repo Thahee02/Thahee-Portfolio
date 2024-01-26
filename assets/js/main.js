@@ -1,8 +1,11 @@
 $("document").ready(function () {
 
   // Disable preloader
-
-  $('#preLoader').hide()
+  $('document').load(function () {
+    $('#preLoader').hide()
+    
+  });
+  
 
   // Disable right click
   $("body").bind("contextmenu", function (e) {
