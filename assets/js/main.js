@@ -1,9 +1,9 @@
-$('#preLoader').show()
+// Disable preloader
+$(window).on('load',function () {
+  $("#preLoader").fadeOut(2000);
+});
 
 $("document").ready(function () {
-
-  // Disable preloader
-  $('#preLoader').hide()  
 
   // Disable right click
   $("body").bind("contextmenu", function (e) {
