@@ -3,6 +3,16 @@ $(window).on('load',function () {
   $("#preLoader").fadeOut(2000);
 });
 
+$(window).blur(function (e) { 
+  document.title = 'Come Back to Portfolio | AMM. Hathil Thahee';
+  
+});
+
+$(window).focus(function (e) { 
+  document.title = 'Hathil Thahee - Portfolio';
+  
+});
+
 $("document").ready(function () {
 
   // Disable right click
