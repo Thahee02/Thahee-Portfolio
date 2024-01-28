@@ -18,7 +18,7 @@ $("document").ready(function () {
 
   // Disable right click
   $("body").bind("contextmenu", function (e) {
-    return true;
+    return false;
   });
 
   // Menu Bar toggle
