@@ -3,12 +3,13 @@ $(window).on('load',function () {
   $("#preLoader").fadeOut(2000);
 });
 
-$(window).blur(function (e) { 
+// change title when user change the tab
+$(window).blur(function () { 
   document.title = 'Come Back to Portfolio | AMM. Hathil Thahee';
   
 });
 
-$(window).focus(function (e) { 
+$(window).focus(function () { 
   document.title = 'Hathil Thahee - Portfolio';
   
 });
@@ -17,7 +18,7 @@ $("document").ready(function () {
 
   // Disable right click
   $("body").bind("contextmenu", function (e) {
-    return false;
+    return true;
   });
 
   // Menu Bar toggle
@@ -26,7 +27,6 @@ $("document").ready(function () {
   );
   $("#menuBtn").click(function () {
     $("#menuBar").toggle();
-    $("#menuBtn").toggleClass("closeIcon");
   });
 
   // move my picture behalf of mouse move
@@ -76,12 +76,9 @@ $("document").ready(function () {
 
   $("#loadMoreBtn").click(function () {
     $(".extraPortfolio").toggle();
+    let loadMoreTxt = $("#loadMoreText").text();
+    loadMoreTxt == 'Load More' ? $("#loadMoreText").text('Hide') : $("#loadMoreText").text('Load More');
   });
 
   $("#footerYear").text(curYear);
-});
-
-// change title when user change the tab
-$("window").blur(function () {
-  $("document").prop("title", "Welcome back to portfolio");
 });
