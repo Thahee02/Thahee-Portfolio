@@ -29,6 +29,14 @@ $("document").ready(function () {
     $("#menuBar").toggle();
   });
 
+  // Animate my passion text
+  new Typed('#myPassion', {
+    strings: ['Front-End Developer', 'Back-End Developer', 'UI/UX Designer'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true
+  })
+
   // move my picture behalf of mouse move
   $("#myPic").mousemove(function (e) {
     let x = (e.clientX * 5) / 250;
