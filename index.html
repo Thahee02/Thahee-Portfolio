@@ -17,11 +17,6 @@
   </head>
   <body class="select-none relative">
 
-    <!-- Preloader section -->
-    <div id="preLoader" class="absolute top-0 left-0 right-0 w-full h-full bg-black z-50 bg-opacity-50 flex justify-center items-center">
-      <img src="/assets/images/1495.gif" alt="">
-    </div>
-
     <!-- Section -> Header -->
     <header>
       <section class="bg-sky-950 max-md:px-5 md:px-20 lg:px-16 py-8 lg:flex max-lg:space-y-5 items-center lg:justify-between max-lg:text-center" id="home">
@@ -226,6 +221,12 @@
         <!-- Portfolio -> Images -->
         <div id="projects" class="max-sm:mt-8 sm:mt-12 max-lg:mt-20 max-xl:mt-8 xl:mt-14 max-sm:space-y-8 sm:flex max-lg:justify-evenly lg:justify-evenly lg:px-16 flex-wrap">
           <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
+            <a href="https://thahee02.github.io/nic-converter/" class="max-lg:space-y-2 lg:space-y-6 text-center">
+              <img src="./assets/images/nic-converter.PNG" alt="nic-converter" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-sm transition-all duration-700 h-32">
+              <p class="text-sm font-semibold">NIC Converter App</p>
+            </a>
+          </div>
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
             <a href="https://thahee02.github.io/qr-generator/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/qr-code-generator.PNG" alt="qr-code-generator" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-sm transition-all duration-700 h-32">
               <p class="text-sm font-semibold">QR Code Generator</p>
@@ -255,7 +256,7 @@
               <p class="text-sm font-semibold">Tic Tac Toe App</p>
             </a>
           </div>
-          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX">
+          <div class="w-64 h-36 flex justify-center items-center max-sm:mx-auto max-lg:m-2 max-xl:m-10 xl:m-8 hover:text-red-500 animate__animated animate__flipInX extraPortfolio">
             <a href="https://thahee02.github.io/Thahee-Calculator/" class="max-lg:space-y-2 lg:space-y-6 text-center">
               <img src="./assets/images/thahee-calculator.PNG" alt="thahee-calculator" class="max-lg:scale-100 lg:scale-125 hover:scale-110 rounded shadow-md transition-all duration-700 h-32">
               <p class="text-sm font-semibold">Calculator App</p>
@@ -380,6 +381,11 @@
         </a>
       </section>
     </footer>
+
+    <!-- Preloader section -->
+    <div id="preLoader" class="absolute top-0 left-0 right-0 w-full h-screen bg-black z-50 bg-opacity-50 flex justify-center items-center">
+      <img src="/assets/images/1495.gif" alt="preloader">
+    </div>
 
     <!-- type js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
