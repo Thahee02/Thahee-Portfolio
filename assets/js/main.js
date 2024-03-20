@@ -1,7 +1,7 @@
 // Disable preloader
-$(window).on('load',function () {
-  $("#preLoader").fadeOut(2000);
-});
+// $(window).on('load',function () {
+//   $("#preLoader").fadeOut(2000);
+// });
 
 // change title when user change the tab
 $(window).blur(function () { 
