@@ -31,7 +31,7 @@ $("document").ready(function () {
 
   // Animate my passion text
   new Typed('#myPassion', {
-    strings: ['Front-End Developer', 'Back-End Developer', 'UI/UX Designer'],
+    strings: ['MERN Stack Developer', 'PHP Developer'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
