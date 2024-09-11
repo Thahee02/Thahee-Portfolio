@@ -62,7 +62,7 @@ $("document").ready(function () {
   let curYear = new Date().getFullYear();
   let today = new Date(`${curMonth} ${todayDate} ${curYear}`);
   let different = today - startDate;
-  let differentMonths = Math.floor(different / 1000 / 60 / 60 / 24 / 30);
+  let differentMonths = Math.floor(different / 1000 / 60 / 60 / 24 / 30 / 12);
 
   differentMonths =
     differentMonths < 10 ? "0" + differentMonths : differentMonths;
